@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'com.disney'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    implementation("org.projectlombok:lombok:1.18.42")
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+    implementation("org.springframework.boot:spring-boot-starter-web:3.5.7")
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web-services
+    implementation("org.springframework.boot:spring-boot-starter-web-services:3.5.7")
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools
+    implementation("org.springframework.boot:spring-boot-devtools:3.5.7")
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test
+    testImplementation("org.springframework.boot:spring-boot-starter-test:3.5.7")
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+}
